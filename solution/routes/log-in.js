@@ -38,7 +38,7 @@ function post(req, res) {
       const session_id = createSession(user.id);
       res.cookie("sid", session_id, {
         signed: true,
-        maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
+        maxAge: 1000 * 60 * 60 * 24 * 7,
         sameSite: "lax",
         httpOnly: true,
       });

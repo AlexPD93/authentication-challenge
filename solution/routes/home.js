@@ -1,5 +1,6 @@
 const { getSession } = require("../model/session.js");
 const { Layout } = require("../templates.js");
+const { session } = require("../server.js");
 
 function get(req, res) {
   const sid = req.signedCookies.sid;

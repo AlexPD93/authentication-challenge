@@ -47,13 +47,6 @@ function post(req, res) {
       res.redirect(`/confessions/${user.id}`);
     });
   }
-  /**
-   * [1] Compare submitted password to stored hash
-   * [2] If no match redirect back to same page so user can retry
-   * [3] If match create a session with their user ID,
-   *     set a cookie with the session ID,
-   *     redirect to the user's confession page (e.g. /confessions/3)
-   */
 }
 
 module.exports = { get, post };
